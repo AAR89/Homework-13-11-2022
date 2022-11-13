@@ -13,8 +13,8 @@ int numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 
-int max=0;
-int min=0;
+int max=numberA;
+int min=numberB;
 
 if (numberA<numberB)
 {
@@ -24,7 +24,7 @@ else if (numberA>numberB)
 {
     Console.WriteLine($"max={numberA}, min={numberB}");
 }
-else if (max==min)
+else if (numberA==numberB)
 {
     Console.WriteLine("Эти числа равны.");
 }
