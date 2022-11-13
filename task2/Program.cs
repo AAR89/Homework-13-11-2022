@@ -10,26 +10,21 @@
 Console.WriteLine("Введите первое число: ");
 int numberA = Convert.ToInt32(Console.ReadLine());
 
-
 Console.WriteLine("Введите второе число: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 
-int max=numberA;
-int min=numberB;
+int max=0;
+int min=0;
 
 if (numberA<numberB)
 {
     Console.WriteLine($"max={numberB}, min={numberA}");
 }
-// else
-// {
-//     Console.WriteLine($"max={numberA}, min={numberB}");
-// }
-// if (numberA<numberC)
-// {
-//     Console.WriteLine($"max={numberC}, min={numberA}");
-// }
-// else
-// {
-//     Console.WriteLine($"max={numberA}, min={numberC}");
-// }
+else if (numberA>numberB)
+{
+    Console.WriteLine($"max={numberA}, min={numberB}");
+}
+else if (max==min)
+{
+    Console.WriteLine("Эти числа равны.");
+}
