@@ -9,8 +9,5 @@ int n = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 
 for (int i = 2; i <= n; i = i + 2)
 {
-    if (i <= n)
-    {
         Console.Write($"{i} ");
-    }
 }
